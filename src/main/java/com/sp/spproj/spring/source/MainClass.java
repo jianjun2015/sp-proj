@@ -1,5 +1,7 @@
 package com.sp.spproj.spring.source;
 
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
 /**
  * 功能描述:
  *
@@ -8,4 +10,10 @@ package com.sp.spproj.spring.source;
  * @version:
  */
 public class MainClass {
+
+    public static void main(String[] args) {
+        AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(MainConfig.class);
+        FirstDemo firstDemo = applicationContext.getBean(FirstDemo.class);
+        System.out.println(firstDemo);
+    }
 }
