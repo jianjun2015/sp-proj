@@ -1,4 +1,4 @@
-package com.sp.spproj.spring.source;
+package com.sp.spproj.spring.source.base;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

@@ -1,4 +1,4 @@
-package com.sp.spproj.spring.source;
+package com.sp.spproj.spring.source.base;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
  * @version:
  */
 @Configuration
-@ComponentScan(basePackages = "com.sp.spproj.spring.source")
+@ComponentScan(basePackages = "com.sp.spproj.spring.source.base")
 public class MainConfig {
 
     @Bean
