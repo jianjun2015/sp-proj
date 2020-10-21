@@ -1,4 +1,4 @@
-package com.sp.spproj.mybatis.source.page.pagination;
+package com.sp.spproj.page.pagination;
 
 import com.alibaba.fastjson.annotation.JSONField;
 import com.github.pagehelper.Page;

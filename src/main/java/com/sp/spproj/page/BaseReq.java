@@ -1,4 +1,4 @@
-package com.sp.spproj.mybatis.source.dta;
+package com.sp.spproj.page;
 
 import lombok.Data;
 
