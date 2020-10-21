@@ -1,9 +1,12 @@
 package com.sp.spproj.mybatis.source.mapper;
 
+import com.sp.spproj.mybatis.source.dta.CondPram;
 import com.sp.spproj.mybatis.source.entity.TDemo;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
+
+import java.util.List;
 
 /**
  * 功能描述:
@@ -20,4 +23,7 @@ public interface TDemoMapper {
 
     @Select("select * from t_demo where id = #{id}")
     TDemo getRecordById(Long id);
+
+    @Select("select * from t_demo where id = #{id}")
+    List<TDemo> selectByCond(CondPram build);
 }
