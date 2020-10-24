@@ -1,4 +1,4 @@
-package com.sp.spproj.base.dynamic.cglib;
+package com.sp.spproj.design.pattern.dynamic.cglib;
 
 /**
  * @description:

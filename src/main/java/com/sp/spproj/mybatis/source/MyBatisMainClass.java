@@ -32,8 +32,12 @@ public class MyBatisMainClass {
         SqlSession sqlSession = sessionFactory.openSession();
 
         TDemoMapper demoMapper = sqlSession.getMapper(TDemoMapper.class);
-        demoMapper.addRecord(new TDemo(3L, "111"));
-
+//        demoMapper.addRecord(new TDemo(3L, "111"));
+//
+        TDemo recordById = demoMapper.getRecordById(3L);
+//
+//        demoMapper.addRecord(new TDemo(3L, "111"));
+//
 
     }
 

@@ -1,4 +1,4 @@
-package com.sp.spproj.base.dynamic.jdk;
+package com.sp.spproj.design.pattern.dynamic.jdk;
 
 import java.lang.reflect.Proxy;
 
