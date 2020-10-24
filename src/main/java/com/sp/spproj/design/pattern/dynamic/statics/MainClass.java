@@ -1,4 +1,4 @@
-package com.sp.spproj.base.dynamic.statics;
+package com.sp.spproj.design.pattern.dynamic.statics;
 
 /**
  * @description:

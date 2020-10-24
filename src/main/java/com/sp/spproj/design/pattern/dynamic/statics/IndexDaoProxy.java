@@ -1,4 +1,4 @@
-package com.sp.spproj.base.dynamic.statics;
+package com.sp.spproj.design.pattern.dynamic.statics;
 
 /**
  * @description: 静态代理 和目标对应都需要实现同一个接口
