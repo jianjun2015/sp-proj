@@ -1,12 +1,11 @@
 package com.sp.spproj.mybatis.source.mapper;
 
-//import com.sp.spproj.mybatis.source.dta.CondPram;
 import com.sp.spproj.mybatis.source.entity.TDemo;
-import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * 功能描述:
@@ -18,12 +17,12 @@ import java.util.List;
 @Mapper
 public interface TDemoMapper {
 
-    @Insert("insert ignore into t_demo(id,name)values(#{id}, #{name})")
+//    @Insert("insert ignore into t_demo(id,name)values(#{id}, #{name})")
     Integer addRecord(TDemo tDemo);
 
-    @Select("select * from t_demo where id = #{id}")
-    TDemo getRecordById(Long id);
-
 //    @Select("select * from t_demo where id = #{id}")
-//    List<TDemo> selectByCond(CondPram build);
+    TDemo getRecordById(@Param("id") Long id);
+
+    List<Map> getRecordByIds(@Param("sqlPlus") String sqlPlus);
+
 }

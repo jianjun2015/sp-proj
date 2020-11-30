@@ -44,9 +44,9 @@
     </environments>
     <mappers>
         <!--<mapper resource="com/tuling/mybatis/dao/xml/UserMapper.xml"/>-->
-        <mapper class="com.sp.spproj.mybatis.source.mapper.TDemoMapper"></mapper>
+<!--        <mapper class="com.sp.spproj.mybatis.source.mapper.TDemoMapper"></mapper>-->
 <!--        <package name="com.sp.spproj.mybatis.source.mapper"/>-->
-<!--        <mapper resource="mapper/xx.xml"/>-->
+        <mapper resource="mapper/TDemoMapper.xml"/>
     </mappers>
 
 </configuration>

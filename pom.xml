@@ -67,6 +67,12 @@
 			<version>5.1.46</version>
 		</dependency>
 
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>20.0</version>
+		</dependency>
+
 <!--		分页插件-->
 		<dependency>
 			<groupId>com.github.pagehelper</groupId>
@@ -111,7 +117,21 @@
             <version>1.2.62</version>
             <scope>compile</scope>
         </dependency>
-    </dependencies>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>4.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+		</dependency>
+	</dependencies>
 
 	<build>
 		<plugins>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sp.spproj.mybatis.source.mapper.TDemoMapper">
+    <resultMap id="BaseResultMap" type="com.sp.spproj.mybatis.source.entity.TDemo">
+        <id column="id" jdbcType="BIGINT" property="id" />
+        <result column="name" jdbcType="VARCHAR" property="name" />
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, `name`
+    </sql>
+    <insert id="addRecord">
+        insert ignore into t_demo(id,name)values(#{id}, #{name})
+    </insert>
+    <select id="getRecordById" resultType="com.sp.spproj.mybatis.source.entity.TDemo">
+        select <include refid="Base_Column_List"/> from t_demo where id = #{id}
+    </select>
+    <select id="getRecordByIds" resultType="map">
+        select ${sqlPlus}
+    </select>
+
+
+</mapper>
